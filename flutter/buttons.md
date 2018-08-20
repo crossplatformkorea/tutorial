@@ -61,7 +61,26 @@ MaterialButton(
 ),
 ```
 > **Note:** The **MaterialButton** doesn't have shape property and `FlatButton` and 
+
+## MaterialButton
+<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FMaterialButton.gif?alt=media&token=73e786a8-8639-4f34-940f-ae3497acb191"/><br/>
+```dart
+MaterialButton(  
+  padding: EdgeInsets.symmetric(
+    horizontal: 16.0, vertical: 12.0,
+  ),
+  color: Theme.Colors.foodieon,  
+  onPressed: () { },  
+  child: Text(  
+    'MaterialButton',
+    style: TextStyle(  
+    color: Colors.white,  
+    fontSize: 16.0,  
+  ),
+),
+```
+> **Note:** The **MaterialButton** doesn't have shape property and `FlatButton` and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNzQ3NjEzMSwyMDYyMjExMzA4LDExMj
-kxODE2NzEsMzgxMzg3MzRdfQ==
+eyJoaXN0b3J5IjpbLTkyNjY4NjQ0NCwxMzE3NDc2MTMxLDIwNj
+IyMTEzMDgsMTEyOTE4MTY3MSwzODEzODczNF19
 -->
