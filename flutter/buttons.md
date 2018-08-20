@@ -2,7 +2,7 @@
 
 
 ## Flat Button
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FFluatButton.png?alt=media&token=b28d5895-0bae-4801-afa9-973fa99d9bf9"/><br/>
+<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FFlatButton.gif?alt=media&token=8247fb6c-e9e8-46a4-90d6-13150c2c8cea"/><br/>
 ```dart
 FlatButton(  
   padding: EdgeInsets.symmetric(
@@ -23,7 +23,7 @@ FlatButton(
 ```
 
 ## Raised Button
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FRaisedButton.png?alt=media&token=7f5eff08-b399-4da7-84aa-63b35fb567a6"/><br/>
+<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FRaisedButton.gif?alt=media&token=d849900e-7ebe-44d3-88b5-de18593afc34"/><br/>
 ```dart
 RaisedButton(  
   padding: EdgeInsets.symmetric(
@@ -44,7 +44,7 @@ RaisedButton(
 ```
 
 ## MaterialButton
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FMaterialButton.png?alt=media&token=92832c17-8a0b-434a-9165-a64d30da3029"/><br/>
+<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FMaterialButton.gif?alt=media&token=73e786a8-8639-4f34-940f-ae3497acb191"/><br/>
 ```dart
 MaterialButton(  
   padding: EdgeInsets.symmetric(
@@ -61,6 +61,6 @@ MaterialButton(
 ),
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MjIxMTMwOCwxMTI5MTgxNjcxLDM4MT
-M4NzM0XX0=
+eyJoaXN0b3J5IjpbLTc2OTA0MDU5MiwyMDYyMjExMzA4LDExMj
+kxODE2NzEsMzgxMzg3MzRdfQ==
 -->
