@@ -1,5 +1,5 @@
 # Buttons
-> In flutter,  butto
+> In flutter,  button is disabled when `onPress` property is null. Therefore, you won't have any `disabled` property provided in button widgets.
 
 ## Flat Button
 <img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FFlatButton.gif?alt=media&token=8247fb6c-e9e8-46a4-90d6-13150c2c8cea"/><br/>
@@ -81,7 +81,7 @@ MaterialButton(
 ```
 > **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2MDg0NjA2LC0xODQyMDM2Mzk5LDEzMT
-c0NzYxMzEsMjA2MjIxMTMwOCwxMTI5MTgxNjcxLDM4MTM4NzM0
-XX0=
+eyJoaXN0b3J5IjpbLTE1MzIyNzYxNTQsLTE4NDIwMzYzOTksMT
+MxNzQ3NjEzMSwyMDYyMjExMzA4LDExMjkxODE2NzEsMzgxMzg3
+MzRdfQ==
 -->
