@@ -8,7 +8,7 @@ FlatButton(
   padding: EdgeInsets.symmetric(
     horizontal: 16.0, vertical: 12.0,
   ),
-  color: Theme.Colors.foodieon,  
+  color: Colors.red,  
   shape: RoundedRectangleBorder(  
     borderRadius: BorderRadius.circular(10.0),  
   ),
@@ -29,7 +29,7 @@ RaisedButton(
   padding: EdgeInsets.symmetric(
     horizontal: 16.0, vertical: 12.0,
   ),
-  color: Theme.Colors.foodieon,  
+  color: Colors.red,  
   shape: RoundedRectangleBorder(  
     borderRadius: BorderRadius.circular(10.0),  
   ),
@@ -50,7 +50,7 @@ MaterialButton(
   padding: EdgeInsets.symmetric(
     horizontal: 16.0, vertical: 12.0,
   ),
-  color: Theme.Colors.foodieon,  
+  color: Colors.red,  
   onPressed: () { },  
   child: Text(  
     'MaterialButton',
@@ -62,8 +62,8 @@ MaterialButton(
 ```
 > **Note:** The **MaterialButton** doesn't have shape property and `FlatButton` and 
 
-## MaterialButton
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FMaterialButton.gif?alt=media&token=73e786a8-8639-4f34-940f-ae3497acb191"/><br/>
+## RawMaterialButton
+<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FRawMaterialButton.gif?alt=media&token=9e43a5e7-f747-48de-9210-36ce65c58076"/><br/>
 ```dart
 MaterialButton(  
   padding: EdgeInsets.symmetric(
@@ -79,8 +79,8 @@ MaterialButton(
   ),
 ),
 ```
-> **Note:** The **MaterialButton** doesn't have shape property and `FlatButton` and 
+> **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjY4NjQ0NCwxMzE3NDc2MTMxLDIwNj
+eyJoaXN0b3J5IjpbMTM2MDE4Nzg5NywxMzE3NDc2MTMxLDIwNj
 IyMTEzMDgsMTEyOTE4MTY3MSwzODEzODczNF19
 -->
