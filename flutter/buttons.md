@@ -60,7 +60,7 @@ MaterialButton(
   ),
 ),
 ```
-> **Note:** The **MaterialButton** doesn't have shape property and `FlatButton` and 
+> **Note:** The **MaterialButton** doesn't have shape property. `Flutter` recommends not to use this one and rather use `RaisedButton` or `FlatButton`.
 
 ## RawMaterialButton
 <img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FRawMaterialButton.gif?alt=media&token=9e43a5e7-f747-48de-9210-36ce65c58076"/><br/>
@@ -79,8 +79,8 @@ MaterialButton(
   ),
 ),
 ```
-> **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`. 
+> **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDE4Nzg5NywxMzE3NDc2MTMxLDIwNj
-IyMTEzMDgsMTEyOTE4MTY3MSwzODEzODczNF19
+eyJoaXN0b3J5IjpbLTE4NDIwMzYzOTksMTMxNzQ3NjEzMSwyMD
+YyMjExMzA4LDExMjkxODE2NzEsMzgxMzg3MzRdfQ==
 -->
