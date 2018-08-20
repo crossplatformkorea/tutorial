@@ -14,7 +14,7 @@ FlatButton(
   ),
   onPressed: () { },  
   child: Text(  
-    'RaisedButton',
+    'FlatButton',
     style: TextStyle(  
     color: Colors.white,  
     fontSize: 16.0,  
@@ -61,6 +61,6 @@ MaterialButton(
 ),
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTk0NDI2OSwxMTI5MTgxNjcxLDM4MT
+eyJoaXN0b3J5IjpbMjA2MjIxMTMwOCwxMTI5MTgxNjcxLDM4MT
 M4NzM0XX0=
 -->
