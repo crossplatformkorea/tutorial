@@ -60,7 +60,8 @@ MaterialButton(
   ),
 ),
 ```
+> **Note:** The **MaterialButton** doesn't have shape property and `FlatButton` and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2OTA0MDU5MiwyMDYyMjExMzA4LDExMj
+eyJoaXN0b3J5IjpbMTMxNzQ3NjEzMSwyMDYyMjExMzA4LDExMj
 kxODE2NzEsMzgxMzg3MzRdfQ==
 -->
