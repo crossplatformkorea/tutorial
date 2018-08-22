@@ -105,6 +105,7 @@ Column(
   ],
 ),
 ```
+> **Note:** To map the **DropDownButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
 ```dart
 Column(  
   children: <Widget>[  
@@ -114,17 +115,20 @@ Column(
        { 'key': 'KEY2', 'value': 'VALUE2' },  
        { 'key': 'KEY3', 'value': 'VALUE3' },  
        { 'key': 'KEY4', 'value': 'VALUE4' },  
-  { 'key': 'KEY5', 'value': 'VALUE5' },  
- ].map((Map<String, String> value) {  
-  return new DropdownMenuItem<Map<String, String>>(  
-  value: value,  
-  child: new Text(value['value']),  
- ); }).toList(),  
-  onChanged: (_) {},  
- ), ],),
+       { 'key': 'KEY5', 'value': 'VALUE5' },  
+     ].map((Map<String, String> value) {  
+        return new DropdownMenuItem<Map<String, String>>(  
+          value: value,  
+          child: new Text(value['value']),  
+        );
+      }).toList(),  
+      onChanged: (_) {},  
+    ),
+  ],
+),
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAxNzg4MzkyLDEwMzUxNjgsLTE1MzIyNz
+eyJoaXN0b3J5IjpbNTMzNTc2NTU1LDEwMzUxNjgsLTE1MzIyNz
 YxNTQsLTE4NDIwMzYzOTksMTMxNzQ3NjEzMSwyMDYyMjExMzA4
 LDExMjkxODE2NzEsMzgxMzg3MzRdfQ==
 -->
