@@ -82,9 +82,31 @@ MaterialButton(
 > **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
 
 ## DropDownButtons
-
+<img
+src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/DropDownButton.gif?alt=media&token=ffb3d6b6-36ee-45c1-9b44-0d6fadd9f86b"/>
+<br/>
+```dart
+Column(  
+  children: <Widget>[  
+  DropdownButton<String>(  
+  items: <String>[  
+  'KEY1',  
+  'KEY2',  
+  'KEY3',  
+  'KEY4',  
+ ].map((String str) {
+    return new DropdownMenuItem<String>(  
+      value: str,  
+      child: new Text(str),  
+    );
+  }).toList(),  
+  onChanged: (_) {},  
+ ),
+],
+),
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNTE2OCwtMTUzMjI3NjE1NCwtMTg0Mj
-AzNjM5OSwxMzE3NDc2MTMxLDIwNjIyMTEzMDgsMTEyOTE4MTY3
-MSwzODEzODczNF19
+eyJoaXN0b3J5IjpbLTEwMzA4MjIyMzQsMTAzNTE2OCwtMTUzMj
+I3NjE1NCwtMTg0MjAzNjM5OSwxMzE3NDc2MTMxLDIwNjIyMTEz
+MDgsMTEyOTE4MTY3MSwzODEzODczNF19
 -->
