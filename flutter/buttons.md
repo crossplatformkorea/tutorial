@@ -90,10 +90,7 @@ Column(
   children: <Widget>[  
     DropdownButton<String>(  
       items: <String>[  
-        'KEY1',  
-        'KEY2',  
-        'KEY3',  
-        'KEY4',  
+        'KEY1', 'KEY2', 'KEY3', 'KEY4',
       ].map((String str) {
         return new DropdownMenuItem<String>(  
           value: str,  
@@ -128,7 +125,7 @@ Column(
 ),
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTE0Nzc3LDEwMzUxNjgsLTE1MzIyNz
-YxNTQsLTE4NDIwMzYzOTksMTMxNzQ3NjEzMSwyMDYyMjExMzA4
-LDExMjkxODE2NzEsMzgxMzg3MzRdfQ==
+eyJoaXN0b3J5IjpbMTU5MTU3NTQzLDIwMjExNDc3NywxMDM1MT
+Y4LC0xNTMyMjc2MTU0LC0xODQyMDM2Mzk5LDEzMTc0NzYxMzEs
+MjA2MjIxMTMwOCwxMTI5MTgxNjcxLDM4MTM4NzM0XX0=
 -->
