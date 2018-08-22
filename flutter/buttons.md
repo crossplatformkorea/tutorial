@@ -88,25 +88,43 @@ src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o
 ```dart
 Column(  
   children: <Widget>[  
-  DropdownButton<String>(  
-  items: <String>[  
-  'KEY1',  
-  'KEY2',  
-  'KEY3',  
-  'KEY4',  
- ].map((String str) {
-    return new DropdownMenuItem<String>(  
-      value: str,  
-      child: new Text(str),  
-    );
-  }).toList(),  
-  onChanged: (_) {},  
- ),
-],
+    DropdownButton<String>(  
+      items: <String>[  
+        'KEY1',  
+        'KEY2',  
+        'KEY3',  
+        'KEY4',  
+      ].map((String str) {
+        return new DropdownMenuItem<String>(  
+          value: str,  
+          child: new Text(str),  
+        );
+      }).toList(),  
+      onChanged: (_) {},  
+    ),
+  ],
 ),
 ```
+```dart
+Column(  
+  children: <Widget>[  
+    DropdownButton<Map>(  
+      items: <Map<String, String>>[  
+       { 'key': 'KEY1', 'value': 'VALUE1' },  
+       { 'key': 'KEY2', 'value': 'VALUE2' },  
+       { 'key': 'KEY3', 'value': 'VALUE3' },  
+       { 'key': 'KEY4', 'value': 'VALUE4' },  
+  { 'key': 'KEY5', 'value': 'VALUE5' },  
+ ].map((Map<String, String> value) {  
+  return new DropdownMenuItem<Map<String, String>>(  
+  value: value,  
+  child: new Text(value['value']),  
+ ); }).toList(),  
+  onChanged: (_) {},  
+ ), ],),
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzA4MjIyMzQsMTAzNTE2OCwtMTUzMj
-I3NjE1NCwtMTg0MjAzNjM5OSwxMzE3NDc2MTMxLDIwNjIyMTEz
-MDgsMTEyOTE4MTY3MSwzODEzODczNF19
+eyJoaXN0b3J5IjpbNzAxNzg4MzkyLDEwMzUxNjgsLTE1MzIyNz
+YxNTQsLTE4NDIwMzYzOTksMTMxNzQ3NjEzMSwyMDYyMjExMzA4
+LDExMjkxODE2NzEsMzgxMzg3MzRdfQ==
 -->
