@@ -105,7 +105,7 @@ Column(
   ],
 ),
 ```
-> **Note:** To map the **DropDownButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
+> **Note:** To map the **DropdownButton** with `keys` and `values` pair, you can use it like below.
 ```dart
 Column(  
   children: <Widget>[  
@@ -128,7 +128,7 @@ Column(
 ),
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMzNTc2NTU1LDEwMzUxNjgsLTE1MzIyNz
+eyJoaXN0b3J5IjpbMjAyMTE0Nzc3LDEwMzUxNjgsLTE1MzIyNz
 YxNTQsLTE4NDIwMzYzOTksMTMxNzQ3NjEzMSwyMDYyMjExMzA4
 LDExMjkxODE2NzEsMzgxMzg3MzRdfQ==
 -->
