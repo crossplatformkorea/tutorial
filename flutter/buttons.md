@@ -1,50 +1,61 @@
 # Buttons
 > In flutter,  button is disabled when `onPress` property is null. Therefore, you won't have any `disabled` property provided in button widgets.
 
-## Flat Button
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FFlatButton.gif?alt=media&token=8247fb6c-e9e8-46a4-90d6-13150c2c8cea"/><br/>
+## Text Button
+<img src="https://user-images.githubusercontent.com/73378472/198944827-9262098e-a21d-4aca-93e6-393d048ee00c.png" width="200"/><br/>
 ```dart
-FlatButton(  
-  padding: EdgeInsets.symmetric(
-    horizontal: 16.0, vertical: 12.0,
-  ),
-  color: Colors.red,  
-  shape: RoundedRectangleBorder(  
-    borderRadius: BorderRadius.circular(10.0),  
-  ),
-  onPressed: () { },  
-  child: Text(  
-    'FlatButton',
-    style: TextStyle(  
-    color: Colors.white,  
-    fontSize: 16.0,  
+TextButton(
+  onPressed: () {},
+  child: const Text(
+    'TextButton',
+    style: TextStyle(
+      color: Colors.black,
+      fontSize: 16.0,
+    ),
   ),
 ),
 ```
 
-## Raised Button
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FRaisedButton.gif?alt=media&token=d849900e-7ebe-44d3-88b5-de18593afc34"/><br/>
+## Elevated Button
+<img src="https://user-images.githubusercontent.com/73378472/198944813-3fb5be74-97a2-4ddd-9f52-7bfdbc7dda44.png" width="200"/><br/>
 ```dart
-RaisedButton(  
-  padding: EdgeInsets.symmetric(
-    horizontal: 16.0, vertical: 12.0,
+ElevatedButton(
+  style: ButtonStyle(
+    padding: MaterialStateProperty.all(const EdgeInsets.symmetric(
+      horizontal: 16.0,
+      vertical: 12.0,
+    )),
+    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+        side: const BorderSide(color: Colors.red),
+      ),
+    ),
   ),
-  color: Colors.red,  
-  shape: RoundedRectangleBorder(  
-    borderRadius: BorderRadius.circular(10.0),  
-  ),
-  onPressed: () { },  
-  child: Text(  
-    'RaisedButton',
-    style: TextStyle(  
-    color: Colors.white,  
-    fontSize: 16.0,  
+  onPressed: () {},
+  child: const Text(
+    'ElevatedButton',
+    style: TextStyle(
+    color: Colors.white,
+    fontSize: 16.0,
+    ),
   ),
 ),
+```
+
+## OutlinedButton
+<img src="https://user-images.githubusercontent.com/73378472/198944821-afa6e752-95a9-4ce6-934d-0f7f9376a297.png" width="200"/><br/>
+```dart
+OutlinedButton(
+  onPressed: () {},
+  child: const Text(
+    'OutlinedButton',
+  style: TextStyle(color: Colors.black, fontSize: 16),
+)),
 ```
 
 ## MaterialButton
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FMaterialButton.gif?alt=media&token=73e786a8-8639-4f34-940f-ae3497acb191"/><br/>
+<img src="https://user-images.githubusercontent.com/73378472/198944820-51b5a714-6524-41c4-a96c-b8575d556694.png" width="200"/><br/>
 ```dart
 MaterialButton(  
   padding: EdgeInsets.symmetric(
@@ -63,16 +74,16 @@ MaterialButton(
 > **Note:** The **MaterialButton** doesn't have shape property. `Flutter` recommends not to use this one and rather use `RaisedButton` or `FlatButton`.
 
 ## RawMaterialButton
-<img src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/docs%2FRawMaterialButton.gif?alt=media&token=9e43a5e7-f747-48de-9210-36ce65c58076"/><br/>
+<img src="https://user-images.githubusercontent.com/73378472/198944825-bfb29ac0-9358-4ef8-8eab-b31a04c319ba.png" width="200"/><br/>
 ```dart
-MaterialButton(  
+RawMaterialButton(  
   padding: EdgeInsets.symmetric(
     horizontal: 16.0, vertical: 12.0,
   ),
   color: Theme.Colors.foodieon,  
   onPressed: () { },  
   child: Text(  
-    'MaterialButton',
+    'RawMaterialButton',
     style: TextStyle(  
     color: Colors.white,  
     fontSize: 16.0,  
@@ -81,9 +92,73 @@ MaterialButton(
 ```
 > **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
 
+## ToggleButtons
+<img src="https://user-images.githubusercontent.com/73378472/198944831-080b4c1d-3736-4378-a981-8f3d46c2993e.gif"/>
+```dart
+ToggleButtons(
+  isSelected: const <bool>[false, false, false],
+  onPressed: (_) {},
+  children: const [
+    Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16.0),
+      child: Text('BUTTON 1'),
+    ),
+    Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16.0),
+      child: Text('BUTTON 2'),
+    ),
+    Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16.0),
+      child: Text('BUTTON 3'),
+    ),
+  ],
+),
+```
+
+## IconButton
+<img src="https://user-images.githubusercontent.com/73378472/198944816-1db29473-f267-4757-a2b9-a35997f9f722.png" width="200"/>
+```dart
+IconButton(onPressed: () {}, icon: const Icon(Icons.icecream)),
+```
+
+## FloatingActionButton
+<img src="https://user-images.githubusercontent.com/73378472/198944815-b30a93f5-eb4c-4ec0-9c93-e8246db47478.png" width="200"/>
+```dart
+FloatingActionButton(
+  onPressed: () {},
+  backgroundColor: Colors.green,
+  child: const Icon(Icons.navigation),
+),
+```
+
+## PopupMenuButton
+<img src="https://user-images.githubusercontent.com/73378472/198944823-ae6530f2-6f7e-45b8-ba1b-7dab49d7fffc.gif"/>
+```dart
+PopupMenuButton<String>(
+  onSelected: (_) {},
+  itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+    const PopupMenuItem<String>(
+      value: "itemOne",
+      child: Text('Item 1'),
+    ),
+    const PopupMenuItem<String>(
+      value: "itemTwo",
+      child: Text('Item 2'),
+    ),
+    const PopupMenuItem<String>(
+      value: "itemThree",
+      child: Text('Item 3'),
+    ),
+    const PopupMenuItem<String>(
+      value: "itemFour",
+      child: Text('Item 4'),
+    ),
+  ],
+),
+```
+
 ## DropDownButtons
-<img
-src="https://firebasestorage.googleapis.com/v0/b/flutterdart-5d354.appspot.com/o/DropDownButton.gif?alt=media&token=ffb3d6b6-36ee-45c1-9b44-0d6fadd9f86b"/>
+<img src="https://user-images.githubusercontent.com/73378472/198944810-ee9d6cc4-42f0-48e0-97f9-a9e8c1b0b7f7.gif"/>
 <br/>
 ```dart
 Column(  
