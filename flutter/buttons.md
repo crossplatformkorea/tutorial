@@ -3,6 +3,7 @@
 
 ## Text Button
 <img src="https://user-images.githubusercontent.com/73378472/198944827-9262098e-a21d-4aca-93e6-393d048ee00c.png" width="200"/><br/>
+
 ```dart
 TextButton(
   onPressed: () {},
@@ -18,6 +19,7 @@ TextButton(
 
 ## Elevated Button
 <img src="https://user-images.githubusercontent.com/73378472/198944813-3fb5be74-97a2-4ddd-9f52-7bfdbc7dda44.png" width="200"/><br/>
+
 ```dart
 ElevatedButton(
   style: ButtonStyle(
@@ -45,6 +47,7 @@ ElevatedButton(
 
 ## OutlinedButton
 <img src="https://user-images.githubusercontent.com/73378472/198944821-afa6e752-95a9-4ce6-934d-0f7f9376a297.png" width="200"/><br/>
+
 ```dart
 OutlinedButton(
   onPressed: () {},
@@ -56,6 +59,7 @@ OutlinedButton(
 
 ## MaterialButton
 <img src="https://user-images.githubusercontent.com/73378472/198944820-51b5a714-6524-41c4-a96c-b8575d556694.png" width="200"/><br/>
+
 ```dart
 MaterialButton(  
   padding: EdgeInsets.symmetric(
@@ -75,6 +79,7 @@ MaterialButton(
 
 ## RawMaterialButton
 <img src="https://user-images.githubusercontent.com/73378472/198944825-bfb29ac0-9358-4ef8-8eab-b31a04c319ba.png" width="200"/><br/>
+
 ```dart
 RawMaterialButton(  
   padding: EdgeInsets.symmetric(
@@ -93,7 +98,8 @@ RawMaterialButton(
 > **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
 
 ## ToggleButtons
-<img src="https://user-images.githubusercontent.com/73378472/198944831-080b4c1d-3736-4378-a981-8f3d46c2993e.gif"/>
+<img src="https://user-images.githubusercontent.com/73378472/198955932-21b6c4c5-c3bb-4aac-99a1-2ef6b6448f5a.gif"/>
+
 ```dart
 ToggleButtons(
   isSelected: const <bool>[false, false, false],
@@ -117,12 +123,14 @@ ToggleButtons(
 
 ## IconButton
 <img src="https://user-images.githubusercontent.com/73378472/198944816-1db29473-f267-4757-a2b9-a35997f9f722.png" width="200"/>
+
 ```dart
 IconButton(onPressed: () {}, icon: const Icon(Icons.icecream)),
 ```
 
 ## FloatingActionButton
 <img src="https://user-images.githubusercontent.com/73378472/198944815-b30a93f5-eb4c-4ec0-9c93-e8246db47478.png" width="200"/>
+
 ```dart
 FloatingActionButton(
   onPressed: () {},
@@ -133,6 +141,7 @@ FloatingActionButton(
 
 ## PopupMenuButton
 <img src="https://user-images.githubusercontent.com/73378472/198944823-ae6530f2-6f7e-45b8-ba1b-7dab49d7fffc.gif"/>
+
 ```dart
 PopupMenuButton<String>(
   onSelected: (_) {},
@@ -158,8 +167,8 @@ PopupMenuButton<String>(
 ```
 
 ## DropDownButtons
-<img src="https://user-images.githubusercontent.com/73378472/198944810-ee9d6cc4-42f0-48e0-97f9-a9e8c1b0b7f7.gif"/>
-<br/>
+<img src="https://user-images.githubusercontent.com/73378472/198944810-ee9d6cc4-42f0-48e0-97f9-a9e8c1b0b7f7.gif"/><br/>
+
 ```dart
 Column(  
   children: <Widget>[  
