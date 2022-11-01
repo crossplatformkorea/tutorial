@@ -18,7 +18,7 @@ TextButton(
 ```
 
 ## Elevated Button
-<img src="https://user-images.githubusercontent.com/73378472/198944813-3fb5be74-97a2-4ddd-9f52-7bfdbc7dda44.png" width="200"/><br/>
+<img src="https://user-images.githubusercontent.com/73378472/199157231-2c8b784f-8e65-41bf-bf67-b5a09d84fd9b.gif"/><br/>
 
 ```dart
 ElevatedButton(
@@ -45,6 +45,8 @@ ElevatedButton(
 ),
 ```
 
+> **Note:** **ElevatedButton** is a label child displayed on a Material widget whose Material.elevation increases when the button is pressed.
+
 ## OutlinedButton
 <img src="https://user-images.githubusercontent.com/73378472/198944821-afa6e752-95a9-4ce6-934d-0f7f9376a297.png" width="200"/><br/>
 
@@ -56,6 +58,8 @@ OutlinedButton(
   style: TextStyle(color: Colors.black, fontSize: 16),
 )),
 ```
+
+> **Note:** **OutlinedButton** is a label child displayed on a (zero elevation) Material widget.
 
 ## MaterialButton
 <img src="https://user-images.githubusercontent.com/73378472/198944820-51b5a714-6524-41c4-a96c-b8575d556694.png" width="200"/><br/>
@@ -75,7 +79,7 @@ MaterialButton(
   ),
 ),
 ```
-> **Note:** The **MaterialButton** doesn't have shape property. `Flutter` recommends not to use this one and rather use `RaisedButton` or `FlatButton`.
+> **Note:** The **MaterialButton** doesn't have shape property. `Flutter` recommends not to use this one and rather use `ElevatedButton` or `TextButton`.
 
 ## RawMaterialButton
 <img src="https://user-images.githubusercontent.com/73378472/198944825-bfb29ac0-9358-4ef8-8eab-b31a04c319ba.png" width="200"/><br/>
@@ -95,7 +99,7 @@ RawMaterialButton(
   ),
 ),
 ```
-> **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`.  `FlatButton` and `RaisedButton` is superset of `RawMaterialButton`.
+> **Note:** The **RawMaterialButton** doesn't have `shape` property as well as `color`.  `TextButton` and `ElevatedButton` is superset of `RawMaterialButton`.
 
 ## ToggleButtons
 <img src="https://user-images.githubusercontent.com/73378472/198955932-21b6c4c5-c3bb-4aac-99a1-2ef6b6448f5a.gif"/>
