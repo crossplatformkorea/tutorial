@@ -47,6 +47,8 @@ TextField(
 ),
 ```
 
+> **Note:** You can add other prefix or suffix.
+
 ## Editable Text
 <img src="https://user-images.githubusercontent.com/73378472/199053956-295a1eb7-f5db-4c41-9eca-6d2cf5b6140b.gif"/><br/>
 
@@ -72,6 +74,9 @@ Column(
 )
 ```
 
+> **Note:** **EditableText** is interacts with the TextInput service to let the user edit the text it contains. It also provides scrolling, selection, and cursor movement.
+
+
 ## Text FormField
 <img src="https://user-images.githubusercontent.com/73378472/199053969-2ead98c8-8c4c-491a-9549-b1b1480ba0f8.png" width="200"/><br/>
 
@@ -89,3 +94,5 @@ TextFormField(
   validator: (_) {},
 ),
 ```
+
+> **Note:** **TextFormField** is This is a convenience widget that wraps a TextField widget in a FormField.
