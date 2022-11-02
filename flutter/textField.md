@@ -76,7 +76,6 @@ Column(
 
 > **Note:** **EditableText** is interacts with the TextInput service to let the user edit the text it contains. It also provides scrolling, selection, and cursor movement.
 
-
 ## Text FormField
 <img src="https://user-images.githubusercontent.com/73378472/199053969-2ead98c8-8c4c-491a-9549-b1b1480ba0f8.png" width="200"/><br/>
 
