@@ -173,11 +173,11 @@ Scaffold(
 
 [ClipRRectlink]: https://api.flutter.dev/flutter/widgets/ClipRRect-class.html 
 
-> **extendBody: false** 화면이 아래로 스크롤 될때, navigation 배경에 가려집니다.
 <img src="https://user-images.githubusercontent.com/73378472/199655497-a9c317b0-3a83-4bec-ae2f-c1b3fb900f5a.gif"/><br/>
+> **extendBody: false** 화면이 아래로 스크롤 될때, navigation 배경에 가려집니다.
 
-> **extendBody: true** 화면이 아래로 스크롤 될때, navigation 배경에 가려지지 않습니다.
 <img src="https://user-images.githubusercontent.com/73378472/199655502-390d4b08-985f-4805-b132-3ecd941895ad.gif"/><br/>
+> **extendBody: true** 화면이 아래로 스크롤 될때, navigation 배경에 가려지지 않습니다.
 
 ## Collapsible TabBar
 <img src="https://user-images.githubusercontent.com/73378472/199413457-ab9d0cb3-dac0-443d-9071-693d5723d9dd.gif"/><br/>
