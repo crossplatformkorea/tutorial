@@ -1,7 +1,7 @@
 # TabBar
 
 ## DefaultTabBar
-<img src="https://user-images.githubusercontent.com/73378472/199385224-92788b74-9d0f-4b16-b59c-5f44ee6af024.gif"/>
+<img src="https://user-images.githubusercontent.com/73378472/199385224-92788b74-9d0f-4b16-b59c-5f44ee6af024.gif"/><br/>
 
 ```dart
 DefaultTabController(
@@ -30,6 +30,7 @@ DefaultTabController(
       ),
     ),
     body: TabBarView(children: <Widget>[
+      // physics: NeverScrollableScrollPhysics(),
       Container(
         color: Colors.yellow,
       ),
@@ -44,8 +45,14 @@ DefaultTabController(
 );
 ```
 
+> 상단탭 클릭으로 화면 이동을 할 수 있는 **DefaultTabBar**입니다 또한 화면내에서 좌우 스와이프로도 화면을 이동 할 수 있습니다.(**TabBarView**의 **physics** 옵션을 활용해 스와이프를 막을수도 있습니다)
+
+> PreferredSize옵션을 사용해 Tab의 높이를 조정 할 수도 있고, 선택된 탭과 안된 탭에 따로 스타일을 적용할 수도 있습니다.
+
+- 문서: https://api.flutter.dev/flutter/material/TabBar-class.html
+
 ## BottomNavigationBar
-<img src="https://user-images.githubusercontent.com/73378472/199385030-d8dc980b-176e-4bc0-9abb-830f1bbb2373.gif"/>
+<img src="https://user-images.githubusercontent.com/73378472/199385030-d8dc980b-176e-4bc0-9abb-830f1bbb2373.gif"/><br/>
 
 ```dart
 Scaffold(
@@ -77,7 +84,9 @@ Scaffold(
 );
 ```
 
-> **Note:** Default BottomNavigationBar.
+> 하단탭 클릭으로 화면 이동을 할 수 있는 **BottomNavigationBar**입니다 **BottomNavigationBar**에 **BottomNavigationBarItem** 리스트가 있습니다, **currentIndex**을 설정하고 **onTap**옵션으로 클릭된 index를 할당하여 화면을 이동시킵니다.
+
+- 문서: https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html
 
 ```dart
 int _selectedIndex = 0;
@@ -99,10 +108,10 @@ static const List<Widget> _widgetOptions = <Widget>[
 ];
 ```
 
-> **Note:** Example of setting _selectedIndex and _widgetOptions.
+> 3개의 **BottomNavigationBarItem** 리스트 예시입니다 리스트는 최소 2개이상 있어야합니다.
 
 ## Radius BottomNavigationBar
-<img src="https://user-images.githubusercontent.com/73378472/199385033-17f0b0af-5763-4afe-9746-32c8c298dbd3.gif"/>
+<img src="https://user-images.githubusercontent.com/73378472/199385033-17f0b0af-5763-4afe-9746-32c8c298dbd3.gif"/><br/>
 
 ```dart
 Scaffold(
@@ -151,19 +160,27 @@ Scaffold(
           setState(
             () {
                 _selectedIndex = index;
-                },
-              );
             },
-          ),
-        ),
+          );
+        },
       ),
-    );
+    ),
+  ),
+);
 ```
 
-> **Note:** If you use **Radius BottomNavigationBar**, it is natural to set the extendBody option to true.
+> **BottomNavigationBar**에 [ClipRRect][ClipRRectlink] 위젯을 활용해 좌우 radius 곡선을 준 navigation입니다. 이 경우 **Scaffold**에 **extendBody: true**을 주어야 자연스러운 ui를 구성할 수 있습니다.
+
+[ClipRRectlink]: https://api.flutter.dev/flutter/widgets/ClipRRect-class.html 
+
+> **extendBody: false** 화면이 아래로 스크롤 될때, navigation 배경에 가려집니다.
+<img src="https://user-images.githubusercontent.com/73378472/199655497-a9c317b0-3a83-4bec-ae2f-c1b3fb900f5a.gif"/><br/>
+
+> **extendBody: true** 화면이 아래로 스크롤 될때, navigation 배경에 가려지지 않습니다.
+<img src="https://user-images.githubusercontent.com/73378472/199655502-390d4b08-985f-4805-b132-3ecd941895ad.gif"/><br/>
 
 ## Collapsible TabBar
-<img src="https://user-images.githubusercontent.com/73378472/199413457-ab9d0cb3-dac0-443d-9071-693d5723d9dd.gif"/>
+<img src="https://user-images.githubusercontent.com/73378472/199413457-ab9d0cb3-dac0-443d-9071-693d5723d9dd.gif"/><br/>
 
 ```dart
 Scaffold(
@@ -205,9 +222,17 @@ Scaffold(
           ),  
         ];
       },
-      body: const Center(
-        child: Text("Sample text"),
-      ),
+      body: TabBarView(children: <Widget>[
+        Container(
+          color: Colors.yellow,
+        ),
+        Container(
+          color: Colors.orange,
+        ),
+        Container(
+          color: Colors.red,
+        ),
+      ]),
     ),
   ),
 );
@@ -236,5 +261,10 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   }
 }
 ```
+> [SliverAppBar][SliverAppBarlink] 위젯을 활용하여 스크롤 가능한 TabBar입니다 pinned: true 옵션으로 상단에 TabBar가 충돌했을때 고정됩니다. [FlexibleSpaceBar][FlexibleSpaceBarlink]로 상단에 표시될 화면을 제공하고 [SliverPersistentHeader][SliverPersistentHeaderlink] 옵션으로 Tab내용을 구성합니다
+delegate 옵션 SliverPersistentHeaderDelegate에 TabBar를 내려주는 방식으로 구성됩니다.
 
-> **Note** When the **CollapsibleTabBar** is scrolled, the tab is pinned to the top
+[SliverAppBarlink]: https://api.flutter.dev/flutter/material/SliverAppBar-class.html 
+[FlexibleSpaceBarlink]: https://api.flutter.dev/flutter/material/FlexibleSpaceBar-class.html
+[SliverPersistentHeaderlink]: https://api.flutter.dev/flutter/widgets/SliverPersistentHeader-class.html
+[SliverPersistentHeaderDelegatelink]: https://api.flutter.dev/flutter/widgets/SliverPersistentHeaderDelegate-class.html

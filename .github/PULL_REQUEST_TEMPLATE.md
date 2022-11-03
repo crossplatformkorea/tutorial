@@ -1,33 +1,27 @@
-# Why
+## PR 이유
 
 <!--
-Please describe the motivation for this PR, and link to relevant GitHub issues, forums posts, or feature requests.
+이 PR의 동기를 설명하고 관련 GitHub 문제, 포럼 게시물 또는 기능 요청에 대한 링크를 제공하세요.
 -->
 
-# How
+## 변경 내용
 
 <!--
-How did you build this feature or fix this bug and why?
+어떻게 기능을 구현했는지 또는 버그를 수정했는지에 대한 내용을 적고 이유를 적어주세요.
 -->
 
-# Screen Shot
+## 체크리스트
+
 
 <!--
-Better if you have screenshots
+pr체크리스트를 작성하고 완료된 항목 박스에 `x`를 넣어서 표시합니다.
 -->
 
-# Test Plan
+- [x] 예시1
+- [ ] 예시2
+
+## 추가 의견
 
 <!--
-Please describe how you tested this change and how a reviewer could reproduce your test, especially if this PR does not include automated tests! If possible, please also provide terminal output and/or screenshots demonstrating your test/reproduction.
+추가 질문이나 논의할 내용이 있으면 적어주세요.
 -->
-
-# Checklist
-
-<!--
-Please check the appropriate items below if they apply to your diff. This is required for changes to Expo modules.
--->
-
-- [ ] Documentation is up to date to reflect these changes (eg: https://docs.expo.dev and README.md).
-- [ ] Conforms with the [Documentation Writing Style Guide](https://github.com/expo/expo/blob/main/guides/Expo%20Documentation%20Writing%20Style%20Guide.md)
-- [ ] This diff will work correctly for `expo prebuild` & EAS Build (eg: updated a module plugin).
