@@ -45,9 +45,8 @@ DefaultTabController(
 );
 ```
 
-> 상단탭 클릭으로 화면 이동을 할 수 있는 **DefaultTabBar**입니다 또한 화면내에서 좌우 스와이프로도 화면을 이동 할 수 있습니다.(**TabBarView**의 **physics** 옵션을 활용해 스와이프를 막을수도 있습니다)
-
-> PreferredSize옵션을 사용해 Tab의 높이를 조정 할 수도 있고, 선택된 탭과 안된 탭에 따로 스타일을 적용할 수도 있습니다.
+상단탭 클릭으로 화면 이동을 할 수 있는 **DefaultTabBar**입니다 또한 화면내에서 좌우 스와이프로도 화면을 이동 할 수 있습니다.(`TabBarView`의 `physics` 옵션을 활용해 스와이프를 막을수도 있습니다)
+PreferredSize옵션을 사용해 Tab의 높이를 조정 할 수도 있고, 선택된 탭과 안된 탭에 따로 스타일을 적용할 수도 있습니다.
 
 - 문서: https://api.flutter.dev/flutter/material/TabBar-class.html
 
@@ -84,7 +83,7 @@ Scaffold(
 );
 ```
 
-> 하단탭 클릭으로 화면 이동을 할 수 있는 **BottomNavigationBar**입니다 **BottomNavigationBar**에 **BottomNavigationBarItem** 리스트가 있습니다, **currentIndex**을 설정하고 **onTap**옵션으로 클릭된 index를 할당하여 화면을 이동시킵니다.
+하단탭 클릭으로 화면 이동을 할 수 있는 **BottomNavigationBar**입니다 **BottomNavigationBar**에 `BottomNavigationBarItem` 리스트가 있습니다, `currentIndex`을 설정하고 `onTap`옵션으로 클릭된 index를 할당하여 화면을 이동시킵니다.
 
 - 문서: https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html
 
@@ -108,7 +107,7 @@ static const List<Widget> _widgetOptions = <Widget>[
 ];
 ```
 
-> 3개의 **BottomNavigationBarItem** 리스트 예시입니다 리스트는 최소 2개이상 있어야합니다.
+3개의 **BottomNavigationBarItem** 리스트 예시입니다 리스트는 최소 2개이상 있어야합니다.
 
 ## Radius BottomNavigationBar
 <img src="https://user-images.githubusercontent.com/73378472/199385033-17f0b0af-5763-4afe-9746-32c8c298dbd3.gif"/><br/>
@@ -169,7 +168,7 @@ Scaffold(
 );
 ```
 
-> **BottomNavigationBar**에 [ClipRRect][ClipRRectlink] 위젯을 활용해 좌우 radius 곡선을 준 navigation입니다. 이 경우 **Scaffold**에 **extendBody: true**을 주어야 자연스러운 ui를 구성할 수 있습니다.
+**BottomNavigationBar**에 [ClipRRect][ClipRRectlink] 위젯을 활용해 좌우 radius 곡선을 준 navigation입니다. 이 경우 `Scaffold`에 `extendBody: true`을 주어야 자연스러운 ui를 구성할 수 있습니다.
 
 [ClipRRectlink]: https://api.flutter.dev/flutter/widgets/ClipRRect-class.html 
 
@@ -261,7 +260,7 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   }
 }
 ```
-> [SliverAppBar][SliverAppBarlink] 위젯을 활용하여 스크롤 가능한 TabBar입니다 pinned: true 옵션으로 상단에 TabBar가 충돌했을때 고정됩니다. [FlexibleSpaceBar][FlexibleSpaceBarlink]로 상단에 표시될 화면을 제공하고 [SliverPersistentHeader][SliverPersistentHeaderlink] 옵션으로 Tab내용을 구성합니다
+[SliverAppBar][SliverAppBarlink] 위젯을 활용하여 스크롤 가능한 `TabBar`입니다 `pinned: true` 옵션으로 상단에 TabBar가 충돌했을때 고정됩니다. [FlexibleSpaceBar][FlexibleSpaceBarlink]로 상단에 표시될 화면을 제공하고 [SliverPersistentHeader][SliverPersistentHeaderlink] 옵션으로 Tab내용을 구성합니다
 delegate 옵션 SliverPersistentHeaderDelegate에 TabBar를 내려주는 방식으로 구성됩니다.
 
 [SliverAppBarlink]: https://api.flutter.dev/flutter/material/SliverAppBar-class.html 

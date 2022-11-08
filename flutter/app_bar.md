@@ -27,11 +27,8 @@ AppBar(
 ),
 ```
 
-> 스크린 상단에 들어가는 **AppBar**입니다.
-
-> **title**옵션에 스크린 이름을 표시 할 수 있고 **leading**, **actions** 옵션으로 왼쪽, 오른쪽 위젯을 추가 할 수 있습니다.
-
-> **automaticallyImplyLeading**을 true로 할 경우 자동으로 왼쪽에 뒤로가기 버튼이 활성화 됩니다. (leading옵션이 null이어야 합니다.)
+스크린 상단에 들어가는 **AppBar**입니다 `title`옵션에 스크린 이름을 표시 할 수 있고 `leading`, `actions` 옵션으로 왼쪽, 오른쪽 위젯을 추가 할 수 있습니다.
+`automaticallyImplyLeading을` true로 할 경우 자동으로 왼쪽에 뒤로가기 버튼이 활성화 됩니다. (leading옵션이 null이어야 합니다.)
 
 - 문서: https://api.flutter.dev/flutter/material/AppBar-class.html
 
