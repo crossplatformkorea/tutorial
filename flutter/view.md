@@ -15,9 +15,12 @@ ListView(
 ```
 화면을 스크롤되게 하고 view를 컨트롤 할 수 있게 해주는 [ListView][ListViewLink]입니다.
 `scrollDirection` 속성으로 가로로 스크롤 되게 할 수 있고, `reverse` 속성으로 반대로 리스트를 보여 줄 수 있습니다.
-또한, `addAutomaticKeepAlives`, `cacheExtent` 속성으로 화면 밖 리스트가 유지되지 않게 해줄 수 있습니다.
+[addAutomaticKeepAlives][KeepAliveLink] 속성이 false일 경우 화면 밖 리스트 렌더가 유지되지 않게 해줄 수 있습니다.
+또한, [cacheExtent][cacheExtentLink] 속성이 100일 경우 100픽셀 만큼 화면 밖에서 아이템들을 미리 빌드를 해주기 때문에 listView 로딩을 기다리지 않아도 됩니다.
 physics: `NeverScrollableScrollPhysics()`은 스크롤이 안되게 하는 속성입니다.
 
+[KeepAliveLink]:https://api.flutter.dev/flutter/widgets/KeepAlive-class.html
+[cacheExtentLink]:https://api.flutter.dev/flutter/widgets/ScrollView/cacheExtent.html
 [ListViewLink]:https://api.flutter.dev/flutter/widgets/ListView-class.html
 
 ```dart
@@ -77,6 +80,6 @@ GridView.count(
 ```
 
 [GridView][GridViewLink] grid형태의 `ListView`입니다. `crossAxisCount`속성으로 열의 갯수를 정할 수 있고, `crossAxisSpacing`, `mainAxisSpacing`속성으로 view사이 간격을 줄 수 있습니다.
-`primary` 속성이 true이면 실제로 스크롤하기에 충분한 콘텐츠가 없는 경우에도 스크롤 뷰를 스크롤할 수 있습니다. 
+`primary` 속성이 true이면 실제로 스크롤 하기에 충분한 콘텐츠가 없는 경우에도 스크롤 뷰를 스크롤 할 수 있습니다. 
 
 [GridViewLink]:https://api.flutter.dev/flutter/widgets/GridView-class.html

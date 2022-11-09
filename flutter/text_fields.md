@@ -23,7 +23,7 @@ TextField(
 ),
 ```
 사용자에게 입력값을 받을 수 있는 기본 **TextField**입니다. 
-`keyboardType`으로 키보드형태를 변경할 수 있고 `hintText` 옵션으로 어떤 입력값을 넣어야하는지 알려 줄 수 있습니다.
+`keyboardType`으로 키보드형태를 변경할 수 있고 `hintText`(placeholder) 속성으로 어떤 입력값을 넣어야하는지 알려 줄 수 있습니다.
 
 - 문서: https://api.flutter.dev/flutter/material/TextField-class.html
 
@@ -51,9 +51,9 @@ TextField(
 ),
 ```
 
-**TextField**에서 옵션만 추가된 형태로 `prefix`, `suffix` 옵션을 추가해서 입력값이외에 `TextField`안에 widget을 추가할 수 있습니다.
+**TextField**에서 옵션만 추가된 형태로 `prefix`, `suffix` 옵션을 추가해서 입력값 이외에 `TextField`안에 widget을 추가할 수 있습니다.
 
-- 참고: `prefixText` 또는 `suffixText`의 경우 `TextField`에서 포커스 아웃 됐을때 사라지므로 포커스 아웃됐을때도 유지하고 싶다면 `prefixIcon` 또는 `suffixIcon`, child Text를 넣어줘야 합니다.
+- 참고: `prefixText` 또는 `suffixText`의 경우 `TextField`에서 포커스 아웃됐을 때 사라지므로 포커스 아웃됐을 때도 유지하고 싶다면 `prefixIcon` 또는 `suffixIcon`, child Text를 넣어줘야 합니다.
 
 ## Editable Text
 <img src="https://user-images.githubusercontent.com/73378472/199053956-295a1eb7-f5db-4c41-9eca-6d2cf5b6140b.gif"/><br/>

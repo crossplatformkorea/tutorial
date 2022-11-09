@@ -49,7 +49,7 @@ ElevatedButton(
 ```
 
 [ElevatedButton][ElevatedButtonLink]은 버튼을 누를 때 Material.elevation(높이)가 증가 하는 Material 위젯 에 표시되는 하위 레이블 입니다 또한 잉크가 증가하는 듯한 효과가 있습니다.
-[dialogs][dialogLink] or [cards][cardLink]같은 이미 높은 위젯 위에 사용하면 안됩니다.
+공식문서에서는 [dialogs][dialogLink] or [cards][cardLink]같은 위젯들은 이미 높이가 높기 때문에 사용을 피하는것을 권장합니다.
 
 [ElevatedButtonLink]:https://api.flutter.dev/flutter/material/ElevatedButton-class.html
 [dialogLink]:https://api.flutter.dev/flutter/material/Dialog-class.html
@@ -136,7 +136,8 @@ ToggleButtons(
   ],
 ),
 ```
-[ToggleButtons][ToggleButtonsLink]은 여러개의 옵션을 선택할 수 있는 버튼입니다. `isSelected` 속성에 bool타입으로 선택 됐는지 여부를 체크할 수 있으며 `isSelected`에 제공된 배열의 길이와 `children` 속성 길이는 같아야 합니다.
+[ToggleButtons][ToggleButtonsLink]은 여러개의 옵션을 선택할 수 있는 버튼입니다. `isSelected` 속성에 bool타입으로 선택 됐는지 여부를 체크할 수 있습니다.
+* 중요: `isSelected`에 제공된 배열의 길이와 `children` 속성 길이는 같아야 합니다.
 
 [ToggleButtonsLink]:https://api.flutter.dev/flutter/material/ToggleButtons-class.html
 
@@ -164,7 +165,7 @@ FloatingActionButton(
 ```
 
 [FloatingActionButton][FloatingActionButtonLink]은 화면에 위치가 고정되어 떠 있는 고정 버튼입니다.
-화면당 최대 하나의 버튼을 사용하고 "만들기", "공유" 또는 "탐색"과 같은 긍정적인 작업에 사용해야 합니다.
+화면당 최대 하나의 버튼을 사용하고 데이터를 추가하거나, 공유하거나, 화면을 이동하는 행동에 사용해야 합니다.
 
 [FloatingActionButtonLink]:https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
 
@@ -195,7 +196,7 @@ PopupMenuButton<String>(
 ),
 ```
 
-[PopupMenuButton][PopupMenuButtonLink]은 여러개의 옵션을 선택 할 수 있는 버튼이고 열고 닫을 수 있습니다
+[PopupMenuButton][PopupMenuButtonLink]은 여러개의 옵션을 선택 할 수 있는 버튼이고 열고 닫을 수 있습니다.
 누를 때 메뉴를 표시하고 항목이 선택되어 메뉴가 닫히면 `onSelected` 를 호출합니다. `onSelected` 에 전달된 값은 선택한 메뉴 항목의 값입니다.
 
 [PopupMenuButtonLink]:https://api.flutter.dev/flutter/material/PopupMenuButton-class.html
