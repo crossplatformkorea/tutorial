@@ -45,8 +45,8 @@ DefaultTabController(
 );
 ```
 
-상단탭 클릭으로 화면 이동을 할 수 있는 **DefaultTabBar**입니다 또한 화면내에서 좌우 스와이프로도 화면을 이동 할 수 있습니다.(`TabBarView`의 `physics` 옵션을 활용해 스와이프를 막을수도 있습니다)
-PreferredSize옵션을 사용해 Tab의 높이를 조정 할 수도 있고, 선택된 탭과 안된 탭에 따로 스타일을 적용할 수도 있습니다.
+상단탭 클릭으로 화면 이동을 할 수 있는 **DefaultTabBar**입니다 또한 화면내에서 좌우 스와이프로도 화면을 이동 할 수 있습니다.`TabBarView`의 `physics` 옵션을 활용해 스와이프를 막을수도 있습니다.
+PreferredSize 옵션을 사용해 Tab의 높이를 조정 할 수도 있고, 선택된 탭과 안된 탭에 따로 스타일을 적용할 수도 있습니다.
 
 - 문서: https://api.flutter.dev/flutter/material/TabBar-class.html
 
@@ -168,7 +168,7 @@ Scaffold(
 );
 ```
 
-**BottomNavigationBar**에 [ClipRRect][ClipRRectlink] 위젯을 활용해 좌우 radius 곡선을 준 navigation입니다. 이 경우 `Scaffold`에 `extendBody: true`을 주어야 자연스러운 ui를 구성할 수 있습니다.
+**BottomNavigationBar**에 [ClipRRect][ClipRRectlink] 위젯을 활용해 좌우 radius 곡선을 준 navigation입니다. 이 경우 `Scaffold`에 `extendBody: true`를 주어야 자연스러운 ui를 구성할 수 있습니다.
 
 [ClipRRectlink]: https://api.flutter.dev/flutter/widgets/ClipRRect-class.html 
 

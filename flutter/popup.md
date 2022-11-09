@@ -46,9 +46,9 @@ ElevatedButton(
 ),
 ```
 [AlertDialog][AlertDialogLink]를 활용한 버튼을 추가 할 수 있는 팝업입니다. 
-[showDialog][showDialogLink]로 팝업을 띄우고 [AlertDialog][AlertDialogLink] 위젯으로 구성합니다 
-`title`항목과 `content`항목으로 나누어서 구성하고 `actions` 옵션에 버튼을 추가할 수 있습니다
-바깥영역을 클릭하거나 `onPressed`에 `Navigator.of(context).pop()`를 추가해서 팝업을 끌 수 있습니다
+[showDialog][showDialogLink]로 팝업을 띄우고 [AlertDialog][AlertDialogLink] 위젯으로 구성합니다.
+`title`항목과 `content`항목으로 나누어서 구성하고 `actions` 옵션에 버튼을 추가할 수 있습니다.
+바깥 영역을 클릭하거나 `onPressed`에 `Navigator.of(context).pop()`를 추가해서 팝업을 끌 수 있습니다.
 
 [AlertDialogLink]: https://api.flutter.dev/flutter/material/AlertDialog-class.html
 [showDialogLink]: https://api.flutter.dev/flutter/material/showDialog.html
@@ -141,9 +141,9 @@ SlideTransition(
   }
 ```
 
-[SlideTransition][SlideTransitionLink]을 활용한 아래에서 올라오는 **ToastPopup**입니다
+[SlideTransition][SlideTransitionLink]을 활용한 아래에서 올라오는 **ToastPopup**입니다.
 [showDialog][showDialogLink] builder에 커스텀 PopupAnimation위젯으로 구성됩니다.
-[AnimationController][AnimationControllerLink]를 사용해 애니메이션을 적용하고 `initState()`에서 실행시키며 `dispose()`로 제거해줍니다 (controller 할당후 dispose()로 삭제해야합니다)
+[AnimationController][AnimationControllerLink]를 사용해 애니메이션을 적용하고 `initState()`에서 실행시키며 `dispose()`로 제거해줍니다. `controller` 할당후 `dispose()`로 삭제해야합니다.
 팝업이 올라오는 시간만 prop으로 받고있으나 지속시간도 커스텀하게 사용 할 수 있습니다.
 
 [SlideTransitionLink]:https://api.flutter.dev/flutter/widgets/SlideTransition-class.html
@@ -151,6 +151,7 @@ SlideTransition(
 [SnackBarLink]:https://docs.flutter.dev/cookbook/design/snackbars
 
 ### Snack Bar
+<img src="https://user-images.githubusercontent.com/73378472/200745101-b66f74e8-52ea-4d0f-8322-a4c526bcb71d.gif"/></br>
 
 ```dart
 Center(
@@ -174,8 +175,8 @@ Center(
 ),
 ```
 
-[SnackBar][SnackBarLink]로도 Toast popup을 구현할 수 있습니다. [ScaffoldMessenger][ScaffoldMessengerLink]를 사용하여 snackBar를 띄웁니다. `ScaffoldMessenger`는 모든 [Scaffold][ScaffoldLink] 상위에서 작동하여 토스트가 나아도록 해줍니다.
-SnackBar는 `action` 속성에 `SnackBarAction`위젯의 `onPressed` 속성으로 버튼을 추가할 수 있습니다.
+[SnackBar][SnackBarLink]로도 Toast popup을 구현할 수 있습니다. [ScaffoldMessenger][ScaffoldMessengerLink]를 사용하여 snackBar를 띄웁니다. `ScaffoldMessenger`는 모든 [Scaffold][ScaffoldLink] 상위에서 작동하며 토스트가 나오도록 해줍니다.
+**SnackBar**는 `action` 속성에 `SnackBarAction`위젯의 `onPressed` 속성으로 팝업창에 버튼을 추가하여 클릭시 팝업을 닫거나 다른 행동을 할 수 있습니다.
 
 [SnackBarLink]:https://docs.flutter.dev/cookbook/design/snackbars
 [ScaffoldMessengerLink]:https://api.flutter.dev/flutter/material/ScaffoldMessenger-class.html
