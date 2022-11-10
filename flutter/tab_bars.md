@@ -260,7 +260,7 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   }
 }
 ```
-[SliverAppBar][SliverAppBarlink] 위젯을 활용하여 스크롤 가능한 `TabBar`입니다 `pinned: true` 옵션으로 상단에 TabBar가 충돌했을때 고정됩니다. [FlexibleSpaceBar][FlexibleSpaceBarlink]로 상단에 표시될 화면을 제공하고 [SliverPersistentHeader][SliverPersistentHeaderlink] 옵션으로 Tab내용을 구성합니다
+[SliverAppBar][SliverAppBarlink] 위젯을 활용하여 스크롤 가능한 `TabBar`입니다. `pinned: true` 옵션으로 상단에 TabBar가 충돌했을때 고정됩니다. [FlexibleSpaceBar][FlexibleSpaceBarlink]로 상단에 표시될 화면을 제공하고 [SliverPersistentHeader][SliverPersistentHeaderlink] 옵션으로 Tab내용을 구성합니다.
 delegate 옵션 SliverPersistentHeaderDelegate에 props로 TabBar를 주는 방식으로 구성됩니다.
 
 [SliverAppBarlink]: https://api.flutter.dev/flutter/material/SliverAppBar-class.html 
